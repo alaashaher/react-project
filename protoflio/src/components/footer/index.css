@@ -1,0 +1,84 @@
+h3 {
+    text-decoration: underline;
+    margin: 40px 0px 20px 0px;
+    color: #e07a5f;
+}
+.footer .contact div {
+    line-height: 24px;
+}
+@media screen and (max-width: 767px) {
+    .footer .contact div {
+        text-align: left;
+        margin-left: 30%;
+   }
+}
+.footer .contact div i {
+    color: #8d9e78;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    transition-duration: 0.3s;
+}
+.footer .contact div span {
+    position: relative;
+    color: #8c8b8b;
+}
+.footer .contact div span::after {
+    content: "";
+    position: absolute;
+    background: #e07a5f;
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.3s;
+}
+.footer .contact div a:hover {
+    color: #e07a5f;
+}
+.footer .contact div a:hover span::after {
+    width: 100%;
+}
+.footer .contact div:hover i {
+    color: #e07a5f;
+}
+.footer .follow {
+    width: 100%;
+    margin-top: 60px;
+}
+.footer .follow .box {
+    text-align: center;
+    vertical-align: middle;
+}
+.footer .follow .box a {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.footer .follow .box a:hover i {
+    background: #e07a5f;
+    border-radius: 5px;
+    transform: rotate(45deg) scale(0.8);
+}
+.footer .follow .box a:hover i::before {
+    transform: rotate(-45deg) scale(1.5);
+}
+.footer .follow .box i {
+    display: inline-block;
+    font-size: 30px;
+    background: #8d9e78;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    color: #fbfbfb;
+    margin: 0 10px 10px;
+    transition-duration: 0.3s;
+}
+.footer .follow .box i.fa::before {
+    display: block;
+}
+.footer .follow .box i::before {
+    transition-duration: 0.3s;
+}
