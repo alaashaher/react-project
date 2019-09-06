@@ -1,1 +1,92 @@
-/*react-project*/
+body, html {
+    margin: 0;
+    background: #eee;
+    font-family: sans-serif;
+    letter-spacing: 0.65px;
+    font-size: 15px;
+    color: #8d9e78;
+    cursor: default;
+}
+* {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: #8d9e78;
+    display: block;
+    transition-duration: 0.3s;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+h3 {
+    color: #3d405b;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.base {
+    box-sizing: border-box;
+   /* float: left;
+    */
+    width: 103%;
+    height: 200px;
+    padding: 30px 15px;
+    background: rgba(238, 238, 238, 0.6);
+}
+.base > div {
+    padding-bottom: 10px;
+}
+.base > div:last-of-type {
+    padding-bottom: 0;
+    z-index: 2;
+}
+.base .profile {
+    background: #8d9e78;
+    padding: 30px 15px 5px;
+    margin: -30px -15px 45px;
+    position: relative;
+    z-index: 2;
+}
+.base .profile .info {
+    text-align: center;
+    color: #fbfbfb;
+}
+.base .profile .info .name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.base .profile .photo {
+    text-align: center;
+}
+.base .profile .photo img {
+    width: 17%;
+    border-radius: 50%;
+}
+.base .profile::after {
+    content: "";
+    position: absolute;
+    background: #8d9e78;
+    width: 100%;
+    height: 30px;
+    bottom: -15px;
+    left: 0;
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+nav {
+    background-color: #3e4633;
+}
+nav ul {
+    display: inline-flex;
+}
+nav ul a {
+    padding: 10px 20px;
+    color: #fff;
+}
+nav ul a:hover {
+    cursor: pointer;
+}

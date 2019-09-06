@@ -1,0 +1,127 @@
+.func .work ul li, .func .edu ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+.func {
+    box-sizing: border-box;
+    padding: 30px 25px;
+    margin-top: 62px;
+    box-sizing: border-box;
+}
+.func > div {
+    padding-bottom: 10px;
+}
+.func > div:last-of-type {
+    padding-bottom: 0;
+}
+.func h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+}
+.func h3 i {
+    color: #fbfbfb;
+    background: #8d9e78;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+}
+.func .work small {
+    display: block;
+    opacity: 0.7;
+}
+.func .work ul li:hover::before {
+    animation: circle 1.2s infinite;
+}
+.func .work ul li:first-of-type::before {
+    width: 10px;
+    height: 10px;
+    left: -2px;
+}
+.func .work ul li:last-of-type {
+    padding-bottom: 3px;
+}
+.func .work ul li:last-of-type::after {
+    border-radius: 1.5px;
+}
+.func .work ul li span {
+    transition-duration: 0.3s;
+}
+.func .work ul li:hover span {
+    color: #e07a5f;
+}
+.func .work ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 3px solid #3d405b;
+    background: #fbfbfb;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+}
+.func .work ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #3d405b;
+    left: 5px;
+    top: 0;
+}
+.func .edu small {
+    display: block;
+    opacity: 0.7;
+}
+.func .edu ul li:hover::before {
+    animation: circle 1.2s infinite;
+}
+.func .edu ul li:first-of-type::before {
+    width: 10px;
+    height: 10px;
+    left: -2px;
+}
+.func .edu ul li:last-of-type {
+    padding-bottom: 3px;
+}
+.func .edu ul li:last-of-type::after {
+    border-radius: 1.5px;
+}
+.func .edu ul li span {
+    transition-duration: 0.3s;
+}
+.func .edu ul li:hover span {
+    color: #e07a5f;
+}
+.func .edu ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 3px solid #3d405b;
+    background: #fbfbfb;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+}
+.func .edu ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #3d405b;
+    left: 5px;
+    top: 0;
+}

@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-
+import image from './image-profile.jpg';
+import './index.css'
 export default class Header extends Component {
     render() {
+        let info = {
+            name: 'Alaa Shaher sobhy',
+            job: 'Front-end Web Develper',
+            about: 'I\'am Front-end Develper, have good exprince, keeping learning more tool'
+        };
         return (
             <div>
-                {/* <nav class="text-center">
-                    <ul>
-                        <a >home</a>
-                        <a >Experience</a>
-                        <a >Skills</a>
-                        <a >Contact</a>
-                    </ul>
-                </nav> */}
-                <div class="base row">
-                    <div class="profile col-12">
-                        <div class="photo"><img src="../../../assets/images/32556524_2112831515640928_131524216569724928_n.jpg" /></div>
-                        <div class="info">
-                            <h4 class="name"></h4><small class="job"></small>
+                <div className="base row">
+                    <div className="profile col-12">
+                        <div className="photo"><img src={image} alt="imageprofile"/></div>
+                        <div className="info">
+                            <h4 className="name">{info.name}</h4><small className="job">{info.job}</small>
                         </div>
                     </div>
-                    <div class="about col-12 text-center">
+                    <div className="about col-12 text-center">
                         <h3>About me</h3>
                         <br />
-
+                        {info.about}
                     </div>
                 </div> 
             </div>
